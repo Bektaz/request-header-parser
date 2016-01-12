@@ -1,0 +1,8 @@
+{
+  "name": "request-header-parser",
+  "description": "Request header parser",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
