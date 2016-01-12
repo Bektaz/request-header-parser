@@ -7,8 +7,8 @@ var server = http.createServer(function(req, res){
     req.connection.remoteAddress || 
     req.socket.remoteAddress ||
     req.connection.socket.remoteAddress;
-    var soft = req.headers['user-agent'];//.split(' ').slice(1,6).join(' ');
-    //soft = soft.slice(1,soft.length-1);
+    var soft = req.headers['user-agent'].split(' ').slice(1,5).join(' ');
+    soft = soft.slice(1,soft.length-1);
     var lan = req.headers["accept-language"].split(',')[0];
     console.log(soft);
     var data = {
